@@ -1,6 +1,6 @@
 // Dodgeball Scores — cache-first service worker for full offline use
-const CACHE = "dodgeball-v2";
-const ASSETS = ["./", "./index.html", "./sw.js"];
+const CACHE = "dodgeball-v3.2";
+const ASSETS = ["./", "./index.html"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
